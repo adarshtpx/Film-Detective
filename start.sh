@@ -1,7 +1,7 @@
 if [ -z $UPSTREAM_REPO ]
 then
   echo "Cloning main Repository"
-  git clone https://github.com/malindunimsara/Film-Detective.git /Film-Detective
+  git clone https://github.com/DARK-DEVIL-BOTZ/Film-Detective.git /Film-Detective
 else
   echo "Cloning Custom Repo from $UPSTREAM_REPO "
   git clone $UPSTREAM_REPO /Film-Detective
