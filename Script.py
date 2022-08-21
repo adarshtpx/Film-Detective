@@ -13,7 +13,7 @@ class script(object):
 🛠 ️𝙱𝚄𝙸𝙻𝙳 𝚂𝚃𝙰𝚃𝚄𝚂: v1.0 [ 𝙱𝙴𝚃𝙰 ]
 👨‍💻 𝙼𝚈 𝙳𝙴𝚅𝙴𝙻𝙾𝙿𝙴𝚁 𝙸𝚂 <a href=https://t.me/DARKDevilV2>𝙼𝙰𝙻𝙸𝙽𝙳𝚄 𝙽𝙸𝙼𝚂𝙰𝚁𝙰</a>"""
     SOURCE_TXT = """<b>NOTE:</b>
-- This is a privet project. 
+- This is a privat edition. 
 - Source - locked🔐
 
 <b>👨‍💻DEVELOPERS👩‍💻:</b>
