@@ -1,4 +1,3 @@
-# Modified By @DARK-Devil
 import re
 from os import environ
 
