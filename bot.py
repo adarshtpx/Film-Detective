@@ -1,4 +1,3 @@
-# Modified By @DARK-Devil
 import logging
 import logging.config
 
