@@ -1,9 +1,9 @@
 # Film-Detective
 Telegram auto movie filter bot🇱🇰
 
-modified by:- @DARKDevil
+modified by :- @DARKDevil
 
-testing bot :-  <a href=https://t.me/DarkDevilBotz>Film Detective</a>
+testing bot :-  <a href=https://t.me/film_detective>Film Detective</a>
 
 Testing app :-  <a href=https://dashboard.heroku.com/apps/film-detective-bot-v2>Team DARK Devil</a>
 
