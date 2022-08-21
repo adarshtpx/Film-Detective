@@ -1,4 +1,3 @@
-# Modified By @DARK-Devil
 class script(object):
     START_TXT = """𝙷𝙴𝙻𝙻𝙾 {} 𝙱𝚁𝙾😉,
 𝙼𝚈 𝙽𝙰𝙼𝙴 𝙸𝚂 <a href=https://t.me/{}>{}</a>, 𝙸 𝙲𝙰𝙽 𝙿𝚁𝙾𝚅𝙸𝙳𝙴 𝙼𝙾𝚅𝙸𝙴𝚂, 𝙹𝚄𝚂𝚃 𝙰𝙳𝙳 𝙼𝙴 𝚃𝙾 𝚈𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿 𝙰𝙽𝙳 𝙼𝙰𝙺𝙴 𝙼𝙴 𝙰𝙳𝙼𝙸𝙽 𝙸𝙽 𝚃𝙷𝙴 𝙶𝚁𝙾𝚄𝙿. 𝚃𝙷𝙴𝙽 𝚈𝙾𝚄 𝚆𝙸𝙻𝙻 𝚂𝙴𝙴 𝙼𝚈 𝙿𝙾𝚆𝙴𝚁𝚉... 😍"""
@@ -13,8 +12,8 @@ class script(object):
 🛠 ️𝙱𝚄𝙸𝙻𝙳 𝚂𝚃𝙰𝚃𝚄𝚂: v1.0 [ 𝙱𝙴𝚃𝙰 ]
 👨‍💻 𝙼𝚈 𝙳𝙴𝚅𝙴𝙻𝙾𝙿𝙴𝚁 𝙸𝚂 <a href=https://t.me/DARKDevilV2>𝙼𝙰𝙻𝙸𝙽𝙳𝚄 𝙽𝙸𝙼𝚂𝙰𝚁𝙰</a>"""
     SOURCE_TXT = """<b>NOTE:</b>
-- This is a privet project. 
-- Source - locked🔐
+- This is a open source project. 
+- Source - https://github.com/malindunimsara/Film-Detective  
 
 <b>👨‍💻DEVELOPERS👩‍💻:</b>
 - <a href=https://t.me/DarkDevilBotz>ᴅᴀʀᴋ ᴅᴇᴠɪʟ ʙᴏᴛᴢ</a>"""
