@@ -8,7 +8,7 @@ testing bot :-  <a href=https://t.me/film_detective>Film Detective</a>
 Testing app :-  <a href=https://dashboard.heroku.com/apps/film-detective>Team DARK Devil</a>
 
 
-       𝗬𝗢𝗨𝗥 𝗕𝗢𝗧 𝗗𝗘𝗣𝗟𝗢𝗬 𝗧𝗢 𝗖𝗟𝗜𝗖𝗞 𝗛𝗘𝗥𝗘👇
+      ✌️ 𝐃𝐨 𝐧𝐨𝐭 𝐝𝐞𝐩𝐥𝐨𝐲. 𝐓𝐡𝐢𝐬 𝐢𝐬 𝐏𝐫𝐢𝐯𝐞𝐭 𝐁𝐨𝐭 𝐞𝐝𝐢𝐭𝐢𝐨𝐧 👇
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/malindunimsara/Film-Detective)
 
