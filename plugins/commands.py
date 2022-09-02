@@ -55,7 +55,7 @@ async def start(client, message):
             ],[
             InlineKeyboardButton('🍭 MAINTENANCE 🍭', url='https://t.me/TeamDarkDevil')
             ],[
-            InlineKeyboardButton('👨‍💻 DEVELOPER 👨‍💻', = url='https://t.me/DARKDevilV2')
+            InlineKeyboardButton('👨‍💻 DEVELOPER 👨‍💻', url='https://t.me/DARKDevilV2')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
