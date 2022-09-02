@@ -24,15 +24,19 @@ async def start(client, message):
     if message.chat.type in ['group', 'supergroup']:
         buttons = [
             [
-                InlineKeyboardButton('🔴 MAIN 🔴', url='https://t.me/TeamDarkDevil')
+                InlineKeyboardButton('🤖 ᗪᗩᖇK ᗪEᐯIᒪ ᗷOTᘔ 🤖', url='https://t.me/DarkDevilBotz)
             ],
             [
-                InlineKeyboardButton('😇 HELP 😇', url=f"https://t.me/{temp.U_NAME}?start=help"),
+                InlineKeyboardButton('🔱 TEᗩᗰ ᗪᗩᖇK ᗪEᐯIᒪ 🔱', url='https://t.me/TeamDarkDevil')
+            ],
+            [
+                InlineKeyboardButton('️️‍🕵️️️ ᖴIᒪᗰ ᗪETEᑕTIᐯE 🕵️', url=f"https://t.me/{temp.U_NAME}?start=help"),
             ]
             ]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply(script.START_TXT.format(message.from_user.mention if message.from_user else message.chat.title, temp.U_NAME, temp.B_NAME), reply_markup=reply_markup)
-        await asyncio.sleep(2) # ?�� https://github.com/EvamariaTG/EvaMaria/blob/master/plugins/p_ttishow.py#L17 ?�� wait a bit, before checking.
+        await asyncio.sleep(2)
+        
         if not await db.get_chat(message.chat.id):
             total=await client.get_chat_members_count(message.chat.id)
             await client.send_message(LOG_CHANNEL, script.LOG_TEXT_G.format(message.chat.title, message.chat.id, total, "Unknown"))       
@@ -91,11 +95,15 @@ async def start(client, message):
         buttons = [[
             InlineKeyboardButton('➕ ADD ME TO YOUR GROUPS ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
+            InlineKeyboardButton('🍭 MAINTENANCE 🍭', url='https://t.me/TeamDarkDevil')
+            ],[
             InlineKeyboardButton('🔎 SEARCH 🔍', switch_inline_query_current_chat=''),
             InlineKeyboardButton('🎃 UPDATES 🎃', url='https://t.me/DarkDevilBotz')
             ],[
             InlineKeyboardButton('😇 HELP 😇', callback_data='help'),
             InlineKeyboardButton('📛 ABOUT 📛', callback_data='about')
+            ],[
+            inlineKeyboardButton('👨‍💻 DEVELOPER 👨‍💻', url='https://t.me/DARKDevilV2')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
