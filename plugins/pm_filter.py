@@ -406,7 +406,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [[
             InlineKeyboardButton('➕ ADD ME TO YOUR GROUPS ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('📂 FILE TO LINK CONVERT 📲', url='https://t.me/devil_filetourl_bot')
+            InlineKeyboardButton('📂 FILE TO LINK CONVERT 📲', url='https://t.me/devil_filetourl_bot?startbot=true')
             ],[
             InlineKeyboardButton('🔎 SEARCH 🔍', switch_inline_query_current_chat=''),
             InlineKeyboardButton('🎃 CHANNEL 🎃', url='https://t.me/DarkNetflixPublic')
@@ -416,7 +416,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
             ],[
             InlineKeyboardButton('🍭 MAINTENANCE 🍭', url='https://t.me/TeamDarkDevil')
             ],[
-            inlineKeyboardButton('👨‍💻 DEVELOPER 👨‍💻', url='https://t.me/DARKDevilV2')
+            InlineKeyboardButton('👨‍💻 DEVELOPER 👨‍💻', url='https://t.me/DARKDevilV2')
+            ],[
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
