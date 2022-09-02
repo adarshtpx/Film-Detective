@@ -417,7 +417,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('🍭 MAINTENANCE 🍭', url='https://t.me/TeamDarkDevil')
             ],[
             inlineKeyboardButton('👨‍💻 DEVELOPER 👨‍💻', url='https://t.me/DARKDevilV2')
-                 ]]
+     ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
             text=script.START_TXT.format(query.from_user.mention, temp.U_NAME, temp.B_NAME),
@@ -429,10 +429,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [[
             InlineKeyboardButton('🕹️ MANUAL FILTER 🕹️', callback_data='manuelfilter'),
             InlineKeyboardButton('🎰 AUTO FILTER 🎰', callback_data='autofilter')
-        ], [
+        ],[
             InlineKeyboardButton('📲 CONNECTION 📱', callback_data='coct'),
             InlineKeyboardButton('🎟️ EXTRA MODS 🎟️', callback_data='extra')
-        ], [
+        ],[
             InlineKeyboardButton('🏡 HOME 🏡', callback_data='start'),
             InlineKeyboardButton('🎈 STATUS 🎈', callback_data='stats')
         ]]
@@ -446,7 +446,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [[
             InlineKeyboardButton('📣 UPDATES 📣', url='https://t.me/DarkDevilBotz'),
             InlineKeyboardButton('💻 SOURCE 💻', callback_data='source')
-        ], [
+        ],[
             InlineKeyboardButton('🏡 HOME 🏡', callback_data='start'),
             InlineKeyboardButton('⛔ CLOSE ⛔', callback_data='close_data')
         ]]
