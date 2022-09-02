@@ -93,13 +93,17 @@ async def start(client, message):
         buttons = [[
             InlineKeyboardButton('➕ ADD ME TO YOUR GROUPS ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('📂 FILE TO LINK CONVERT 📲', url='https://t.me/devil_filetourl_bot')
+            InlineKeyboardButton('📂 FILE TO LINK CONVERT 📲', url='https://t.me/devil_filetourl_bot'')
             ],[
             InlineKeyboardButton('🔎 SEARCH 🔍', switch_inline_query_current_chat=''),
             InlineKeyboardButton('🎃 CHANNEL 🎃', url='https://t.me/DarkNetflixPublic')
             ],[
             InlineKeyboardButton('😇 MORE 😇', callback_data='help'),
             InlineKeyboardButton('📛 ABOUT 📛', callback_data='about')
+            ],[
+            InlineKeyboardButton('🍭 MAINTENANCE 🍭', url='https://t.me/TeamDarkDevil')
+            ],[
+            InlineKeyboardButton('👨‍💻 DEVELOPER 👨‍💻', url='https://t.me/DARKDevilV2')
             ],[
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
