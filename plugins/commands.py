@@ -24,7 +24,7 @@ async def start(client, message):
     if message.chat.type in ['group', 'supergroup']:
         buttons = [
             [
-                InlineKeyboardButton('🤖 ᗪᗩᖇK ᗪEᐯIᒪ ᗷOTᘔ 🤖', url='https://t.me/DarkDevilBotz)
+                InlineKeyboardButton('🤖 ᗪᗩᖇK ᗪEᐯIᒪ ᗷOTᘔ 🤖', url='https://t.me/DarkDevilBotz')
             ],
             [
                 InlineKeyboardButton('🔱 TEᗩᗰ ᗪᗩᖇK ᗪEᐯIᒪ 🔱', url='https://t.me/TeamDarkDevil')
