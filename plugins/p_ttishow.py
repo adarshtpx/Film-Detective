@@ -9,7 +9,7 @@ from utils import get_size, temp, get_settings
 from Script import script
 from pyrogram.errors import ChatAdminRequired
 
-"""-----------------------------------------https://t.me/GetTGLink/4179 --------------------------------------"""
+"""-----------------------------------------DARK DEVIL--------------------------------------"""
 
 @Client.on_message(filters.new_chat_members & filters.group)
 async def save_group(bot, message):
@@ -21,7 +21,6 @@ async def save_group(bot, message):
             await bot.send_message(LOG_CHANNEL, script.LOG_TEXT_G.format(message.chat.title, message.chat.id, total, r_j))       
             await db.add_chat(message.chat.id, message.chat.title)
         if message.chat.id in temp.BANNED_CHATS:
-            # Inspired from a boat of a banana tree
             buttons = [[
                 InlineKeyboardButton('Support', url=f'https://t.me/{SUPPORT_CHAT}')
             ]]
@@ -73,7 +72,7 @@ async def leave_a_chat(bot, message):
         reply_markup=InlineKeyboardMarkup(buttons)
         await bot.send_message(
             chat_id=chat,
-            text='<b>Hello Friends, \nMy admin has told me to leave from group so i go😢! If you wanna add me again contact my 👹support group👹.</b>',
+            text='<b>Hello Friends, \nMy admin has told me to leave from group so i go😢! If you wanna add me again contact my Owner.</b>',
             reply_markup=reply_markup,
         )
 
@@ -112,7 +111,7 @@ async def disable_chat(bot, message):
         reply_markup=InlineKeyboardMarkup(buttons)
         await bot.send_message(
             chat_id=chat_, 
-            text=f'<b>Hello Friends, \n😢My admin has told me to leave from group so i go! If you wanna add me again contact my 👹support group👹.</b> \nReason : <code>{reason}</code>',
+            text=f'<b>Hello Friends, \n😢My admin has told me to leave from group so i go! If you wanna add me again contact my Owner.</b> \nReason : <code>{reason}</code>',
             reply_markup=reply_markup)
         await bot.leave_chat(chat_)
     except Exception as e:
