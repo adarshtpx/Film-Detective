@@ -52,10 +52,6 @@ async def start(client, message):
             ],[
             InlineKeyboardButton('😇 MORE 😇', callback_data='help'),
             InlineKeyboardButton('📛 ABOUT 📛', callback_data='about')
-            ],[
-            InlineKeyboardButton('🍭 MAINTENANCE 🍭', url='https://t.me/TeamDarkDevil')
-            ],[
-            inlineKeyboardButton('👨‍💻 DEVELOPER 👨‍💻', url='https://t.me/DARKDevilV2')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -105,9 +101,6 @@ async def start(client, message):
             InlineKeyboardButton('😇 MORE 😇', callback_data='help'),
             InlineKeyboardButton('📛 ABOUT 📛', callback_data='about')
             ],[
-            InlineKeyboardButton('🍭 MAINTENANCE 🍭', url='https://t.me/TeamDarkDevil')
-            ],[
-            inlineKeyboardButton('👨‍💻 DEVELOPER 👨‍💻', url='https://t.me/DARKDevilV2')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
