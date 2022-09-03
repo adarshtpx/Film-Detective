@@ -373,7 +373,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             await query.answer(url=f"https://t.me/{temp.U_NAME}?start={ident}_{file_id}")
     elif query.data.startswith("checksub"):
         if AUTH_CHANNEL and not await is_subscribed(client, query):
-            await query.answer("I Like Your Smartness, But Don't Be Oversmart. ok?😒", show_alert=True)
+            await query.answer("I Like Your Smartness😅, But Don't Be Oversmart. ok?😒", show_alert=True)
             return
         ident, file_id = query.data.split("#")
         files_ = await get_file_details(file_id)
@@ -406,17 +406,17 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [[
             InlineKeyboardButton('➕ ADD ME TO YOUR GROUPS ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('🔰 FILM GROUP 🔰', url='https://t.me/DarkNetflixGroup')
+            InlineKeyboardButton('📂 FILE TO LINK CONVERT 📲', url='https://t.me/devil_filetourl_bot?start=help')
             ],[
-            InlineKeyboardButton('📂 FILE TO LINK CONVERT 📲', url=f'https://t.me/devil_filetourl_bot?start=help')
+            InlineKeyboardButton('🔎 SEARCH INLINE 🔍', switch_inline_query_current_chat='')
             ],[
-            InlineKeyboardButton('🔎 SEARCH 🔍', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('🎃 MOVIES 🎃', url='https://t.me/DarkNetflixPublic')
+            InlineKeyboardButton('🔰 FILM GROUP 🔰', url='https://t.me/DarkNetflixGroup'),
+            InlineKeyboardButton('♨️ MOVIES ♨️', url='https://t.me/DarkNetflixPublic')
             ],[
             InlineKeyboardButton('😇 MORE 😇', callback_data='help'),
             InlineKeyboardButton('📛 ABOUT 📛', callback_data='about')
             ],[
-            InlineKeyboardButton('🍭 MAINTENANCE 🍭', url='https://t.me/TeamDarkDevil')
+            InlineKeyboardButton('🍭 TEAM DARK DEVIL 🍭', url='https://t.me/TeamDarkDevil')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -547,7 +547,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             parse_mode='html'
         )
     elif query.data == "rfrsh":
-        await query.answer("fetching MongoDb DataBase")
+        await query.answer("Fetching MongoDb DataBase")
         buttons = [[
             InlineKeyboardButton('👨‍🦯 BACK', callback_data='help'),
             InlineKeyboardButton('♻ REFRESH ♻', callback_data='rfrsh')
@@ -741,7 +741,7 @@ async def advantage_spell_chok(msg):
     g_s += await search_gagala(msg.text)
     gs_parsed = []
     if not g_s:
-        k = await msg.reply("I couldn't find any movie in that name.")
+        k = await msg.reply("𝙸 𝙲𝙾𝚄𝙻𝙳 𝙽𝙾𝚃 𝙵𝙸𝙽𝙳 𝙰𝙽𝚈 𝙼𝙾𝚅𝙸𝙴 𝙾𝚁 𝚃𝚅 𝚂𝙴𝚁𝙸𝙴𝚂 𝙸𝙽 𝚃𝙷𝙰𝚃 𝙽𝙰𝙼𝙴🤔")
         await asyncio.sleep(8)
         await k.delete()
         return
@@ -770,7 +770,7 @@ async def advantage_spell_chok(msg):
     movielist += [(re.sub(r'(\-|\(|\)|_)', '', i, flags=re.IGNORECASE)).strip() for i in gs_parsed]
     movielist = list(dict.fromkeys(movielist))  # removing duplicates
     if not movielist:
-        k = await msg.reply("I couldn't find anything related to that. Check your spelling")
+        k = await msg.reply("𝚃𝚑𝚎𝚛𝚎 𝚒𝚜 𝚗𝚘 𝙼𝚘𝚟𝚒𝚎 𝚘𝚛 𝚃𝚅 𝚜𝚎𝚛𝚒𝚎𝚜 𝚋𝚢 𝚝𝚑𝚒𝚜 𝚗𝚊𝚖𝚎.😒\n 𝙿𝚕𝚎𝚊𝚜𝚎 𝚐𝚘𝚘𝚐𝚕𝚎 𝚜𝚎𝚊𝚛𝚌𝚑 𝚊𝚗𝚍 𝚏𝚒𝚗𝚍 𝚝𝚑𝚎 𝚌𝚘𝚛𝚛𝚎𝚌𝚝 𝚗𝚊𝚖𝚎 𝚊𝚗𝚍 𝚢𝚎𝚊𝚛 𝚊𝚗𝚍 𝚛𝚎𝚚𝚞𝚎𝚜𝚝 𝚊𝚐𝚊𝚒𝚗.😁")
         await asyncio.sleep(8)
         await k.delete()
         return
@@ -782,7 +782,7 @@ async def advantage_spell_chok(msg):
         )
     ] for k, movie in enumerate(movielist)]
     btn.append([InlineKeyboardButton(text="Close", callback_data=f'spolling#{user}#close_spellcheck')])
-    await msg.reply("I couldn't find anything related to that\nDid you mean any one of these?",
+    await msg.reply("𝙸 𝚌𝚊𝚗'𝚝 𝚏𝚒𝚗𝚍 𝚊𝚗𝚢 𝙼𝚘𝚟𝚒𝚎 𝚘𝚛 𝚃𝚟 𝚜𝚎𝚛𝚒𝚎𝚜 𝚠𝚒𝚝𝚑 𝚝𝚑𝚒𝚜 𝚗𝚊𝚖𝚎🤔, \n𝙳𝚒𝚍 𝚢𝚘𝚞 𝚖𝚎𝚊𝚗 𝚊𝚗𝚢 𝚘𝚗𝚎 𝚘𝚏 𝚝𝚑𝚎𝚜𝚎?👇",
                     reply_markup=InlineKeyboardMarkup(btn))
 
 
