@@ -1,0 +1,32 @@
+{
+    "name": "Film-Detective",
+    "description": "When you going to send file on telegram channel this bot will save that in database, So you can search that easily in inline mode",
+    "logo":"https://telegra.ph/file/11f63e3bfe35d904051a5.jpg",
+    "stack": "container",
+    "keywords": [
+      "telegram",
+      "film-detective",
+      "auto-filter",
+      "filter",
+      "best",
+      "srilanka",
+      "pyrogram",
+      "media",
+      "search",
+      "channel",
+      "index",
+      "inline"
+    ],
+    "website": "https://github.com/malindunimsara",
+    "repository": "https://github.com/malindunimsara/Film-Detective",
+    "addons": [],
+    "buildpacks": [{
+        "url": "heroku/python"
+    }],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    }
+}
