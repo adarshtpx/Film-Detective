@@ -36,12 +36,12 @@
         },
         "BOT_TOKEN": {
             "description": "Your bot token.",
-            "value": "5429635253:AAEP9Lsy1Bk3TxDDewwtwf2XKU-W__l3UBU",
+            "value": "5429635253:AAFKP3jzAXaQmByU5TSZfAuudBKC7tq6PQc",
             "required": true
         },    
         "CHANNELS": {
             "description": "Username or ID of channel or group. Separate multiple IDs by space.",
-            "value": "-1001621272794 -1001607692169 -1001673187322",
+            "value": "-1001621272794 -1001673187322 -1001607692169",
             "required": true
         },
         "ADMINS": {
