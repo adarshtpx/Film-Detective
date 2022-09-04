@@ -19,6 +19,78 @@
     ],
     "website": "https://github.com/malindunimsara",
     "repository": "https://github.com/malindunimsara/Film-Detective",
+    "env": {
+        "AUTH_USERS": {
+            "description": "Username or ID of users to give access of inline search. Separate multiple users by space.\nLeave it empty if you don't want to restrict bot usage.",
+            "required": false
+        },
+        "API_ID": {
+            "description": "Get this value from https://my.telegram.org",
+            "value": "15197646",
+            "required": true
+        },
+        "API_HASH": {
+            "description": "Get this value from https://my.telegram.org",
+            "value": "12ad370a8455c02701649e1d7b322dc2",
+            "required": true
+        },
+        "BOT_TOKEN": {
+            "description": "Your bot token.",
+            "value": "5429635253:AAEP9Lsy1Bk3TxDDewwtwf2XKU-W__l3UBU",
+            "required": true
+        },    
+        "CHANNELS": {
+            "description": "Username or ID of channel or group. Separate multiple IDs by space.",
+            "value": "-1001621272794 -1001607692169 -1001673187322",
+            "required": true
+        },
+        "ADMINS": {
+            "description": "Username or ID of Admin. Separate multiple Admins by space.",
+            "value": "5512382938 2071644540",
+            "required": true
+        },
+        "PICS": {
+            "description": "Add some telegraph link of pictures .",
+            "value": "https://telegra.ph/file/65231bb88d4619354faf2.jpg",
+            "required": true
+        },
+        "LOG_CHANNEL": {
+            "description": "Bot Logs, Give a channel id with -100xxxxxxx",
+            "value": "-1001787331054",
+            "required": true
+        },
+        "CUSTOM_FILE_CAPTION": {
+            "description": "Do not change",
+            "value": "🤩<b>ᴊᴏɪɴ [ᴜᴘᴅᴀᴛᴇꜱ ᴄʜᴀɴɴᴇʟ](https://t.me/DarkNetflixPublic)</b>😍\n📂𝙵𝙸𝙻𝙴 : <code>{file_name}</code>\n📼𝚂𝙸𝚉𝙴 : <i>{file_size}<i>\n😈𝙾𝚆𝙽𝙴𝚁 : <a href=https://t.me/DARKDevilV2>ᴅᴀʀᴋ ᴅᴇᴠɪʟ</a>",
+            "required": true
+        },
+        "BATCH_FILE_CAPTION": {
+            "description": "Do not change",
+            "value": "🤩<b>ᴊᴏɪɴ [ᴜᴘᴅᴀᴛᴇꜱ ᴄʜᴀɴɴᴇʟ](https://t.me/DarkNetflixPublic)</b>😍\n📂𝙵𝙸𝙻𝙴 : <code>{file_name}</code>\n📼𝚂𝙸𝚉𝙴 : <i>{file_size}<i>\n😈𝙾𝚆𝙽𝙴𝚁 : <a href=https://t.me/DARKDevilV2>ᴅᴀʀᴋ ᴅᴇᴠɪʟ</a>",
+            "required": true
+        },
+        "AUTH_CHANNEL": {
+            "description": "ID of channel.Make sure bot is admin in this channel. Without subscribing this channel users cannot use bot.",
+            "value": "-1001616221826",
+            "required": true
+        },
+        "DATABASE_URI": {
+            "description": "mongoDB URI. Get this value from https://www.mongodb.com. For more help watch this video.",
+            "value": "mongodb+srv://film-detective-bot:darkdevil777@cluster0.l2wokn3.mongodb.net/?retryWrites=true&w=majority",
+            "required": true
+        },
+        "DATABASE_NAME": {
+            "description": "Name of the database in mongoDB.",
+            "value": "cluster0",
+            "required": true
+        },
+        "COLLECTION_NAME": {
+            "description": "Name of the collections. Defaults to Telegram_files. If you are using the same database, then use different collection name for each bot",
+            "value": "Devil_films",
+            "required": true
+        }
+        
+    },
     "addons": [],
     "buildpacks": [{
         "url": "heroku/python"
