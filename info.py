@@ -18,7 +18,7 @@ API_HASH = '12ad370a8455c02701649e1d7b322dc2'
 BOT_TOKEN = '5429635253:AAFKP3jzAXaQmByU5TSZfAuudBKC7tq6PQc'
 
 # Bot settings
-CACHE_TIME =300
+CACHE_TIME = 300
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', False))
 PICS = 'https://telegra.ph/file/ca7db8cf548be0f7e429c.jpg https://telegra.ph/file/ee515fc9df1286c0a3a0d.jpg https://telegra.ph/file/a1d1a6c52771c817ad824.jpg https://telegra.ph/file/df33395c05aad5b341224.jpg https://telegra.ph/file/e9fbad2773626e39adfe1.jpg https://telegra.ph/file/c0b7cde6396908c9c492d.jpg https://telegra.ph/file/70b40295f9db3fa203afc.jpg https://telegra.ph/file/b8462930758fd92e56887.jpg https://telegra.ph/file/979a9187a722e514c95c0.jpg https://telegra.ph/file/b515e1f7a94556caf233f.jpg'.split()
 
@@ -35,7 +35,7 @@ AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 # MongoDB information
 DATABASE_URI = 'mongodb+srv://film-detective:darkdevil@darkdevil.lcfllos.mongodb.net/?retryWrites=true&w=majority'
 DATABASE_NAME = 'darkdevil'
-COLLECTION_NAME = 'Devil_films'
+COLLECTION_NAME = 'Devil_Films'
 
 # Others
 LOG_CHANNEL = [-1001787331054]
