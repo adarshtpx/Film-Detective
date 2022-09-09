@@ -15,7 +15,7 @@ def is_enabled(value, default):
 SESSION = 'Film_search'
 API_ID = 15197646
 API_HASH = '12ad370a8455c02701649e1d7b322dc2'
-BOT_TOKEN = '5429635253:AAFKP3jzAXaQmByU5TSZfAuudBKC7tq6PQc'
+BOT_TOKEN = '5429635253:AAEc3E-C_LRfMQ0g5Nx3cvn7m_OcdC1Pnok'
 
 # Bot settings
 CACHE_TIME =300
