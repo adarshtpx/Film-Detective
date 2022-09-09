@@ -15,7 +15,7 @@ def is_enabled(value, default):
 SESSION = 'Film_search'
 API_ID = 15197646
 API_HASH = '12ad370a8455c02701649e1d7b322dc2'
-BOT_TOKEN = '5429635253:AAEc3E-C_LRfMQ0g5Nx3cvn7m_OcdC1Pnok'
+BOT_TOKEN = '5429635253:AAFKP3jzAXaQmByU5TSZfAuudBKC7tq6PQc'
 
 # Bot settings
 CACHE_TIME =300
@@ -27,8 +27,8 @@ ADMINS = [5512382938, 2071644540]
 CHANNELS = [-1001621272794, -1001673187322, -1001607692169]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
-auth_channel = [-1001616221826]
-AUTH_CHANNEL = [-1001616221826]
+auth_channel = "-1001616221826"
+AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
 auth_grp = environ.get('AUTH_GROUP')
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 
@@ -38,7 +38,7 @@ DATABASE_NAME = 'darkdevil'
 COLLECTION_NAME = 'Devil_Films'
 
 # Others
-LOG_CHANNEL = [-1001787331054]
+LOG_CHANNEL = "-1001787331054"
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'DarkDevilBotz')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "False")), False)
 IMDB = is_enabled((environ.get('IMDB', "True")), True)
