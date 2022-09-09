@@ -75,7 +75,7 @@ async def start(client, message):
         btn = [
             [
                 InlineKeyboardButton(
-                    "🤩 JOIN MAIN CHANNEL 🥰", url=invite_link.invite_link
+                    "🤩JOIN UPDATES CHANNEL🥰", url=invite_link.invite_link
                 )
             ]
         ]
@@ -89,7 +89,7 @@ async def start(client, message):
                 btn.append([InlineKeyboardButton(" 🔁 TRY AGAIN 🔁", url=f"https://t.me/{temp.U_NAME}?start={message.command[1]}")])
         await client.send_message(
             chat_id=message.from_user.id,
-            text='**𝙿𝙻𝙴𝙰𝚂𝙴 𝙹𝙾𝙸𝙽 𝙾𝚄𝚁 𝙼𝙰𝙸𝙽 𝙲𝙷𝙰𝙽𝙽𝙴𝙻 𝚃𝙾 𝚄𝚂𝙴 𝙼𝙴!**',
+            text="**Please Join My Updates Channel to use this Bot!**",
             reply_markup=InlineKeyboardMarkup(btn),
             parse_mode="markdown"
             )
