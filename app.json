@@ -1,4 +1,4 @@
-t
+
 {
     "name": "Film-Detective",
     "description": "When you going to send file on telegram channel this bot will save that in database, So you can search that easily in inline mode",
@@ -20,8 +20,6 @@ t
     ],
     "website": "https://github.com/malindunimsara",
     "repository": "https://github.com/malindunimsara/Film-Detective",
-    "env": {
-    },
     "addons": [],
     "buildpacks": [{
         "url": "heroku/python"
