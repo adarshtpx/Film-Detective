@@ -8,5 +8,5 @@ RUN cd /
 RUN pip3 install -U pip && pip3 install -U -r requirements.txt
 RUN mkdir /Film-Detective
 WORKDIR /Film-Detective
-COPY DarkDevil.sh /DarkDevil.sh
-CMD ["/bin/bash", "/DarkDevil.sh"]
+COPY start.sh /start.sh
+CMD ["/bin/bash", "/start.sh"]
