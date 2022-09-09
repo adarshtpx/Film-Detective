@@ -13,14 +13,14 @@ def is_enabled(value, default):
 
 # Bot information
 SESSION = 'Film_search'
-API_ID = 15197646
-API_HASH = '12ad370a8455c02701649e1d7b322dc2'
-BOT_TOKEN = '5429635253:AAEc3E-C_LRfMQ0g5Nx3cvn7m_OcdC1Pnok'
+API_ID = 19562731
+API_HASH = '1667473e722f17eaa8ccbb98dc5f727d'
+BOT_TOKEN = '5764808122:AAGpDsqIVtm_fhtLSoQuaZDWArunL6xo94M'
 
 # Bot settings
-CACHE_TIME =300
+CACHE_TIME = 300
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', False))
-PICS = 'https://telegra.ph/file/ca7db8cf548be0f7e429c.jpg https://telegra.ph/file/ee515fc9df1286c0a3a0d.jpg https://telegra.ph/file/a1d1a6c52771c817ad824.jpg https://telegra.ph/file/df33395c05aad5b341224.jpg https://telegra.ph/file/e9fbad2773626e39adfe1.jpg https://telegra.ph/file/c0b7cde6396908c9c492d.jpg https://telegra.ph/file/70b40295f9db3fa203afc.jpg https://telegra.ph/file/b8462930758fd92e56887.jpg https://telegra.ph/file/979a9187a722e514c95c0.jpg https://telegra.ph/file/b515e1f7a94556caf233f.jpg'.split()
+PICS = 'https://telegra.ph/file/ca7db8cf548be0f7e429c.jpg https://telegra.ph/file/ee515fc9df1286c0a3a0d.jpg https://telegra.ph/file/a1d1a6c52771c817ad824.jpg https://telegra.ph/file/df33395c05aad5b341224.jpg https://telegra.ph/file/e9fbad2773626e39adfe1.jpg https://telegra.ph/file/c0b7cde6396908c9c492d.jpg https://telegra.ph/file/70b40295f9db3fa203afc.jpg https://telegra.ph/file/911d89afa3411c7cf2a6d.jpg https://telegra.ph/file/b93f13fabe4bd8eac082f.jpg https://telegra.ph/file/ab793a21208d52284f7f8.jpg'
 
 # Admins, Channels & Users
 ADMINS = [5512382938, 2071644540]
