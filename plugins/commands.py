@@ -46,7 +46,7 @@ async def start(client, message):
         buttons = [[
             InlineKeyboardButton('➕ ADD ME TO YOUR GROUPS ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('📂 FILE TO LINK CONVERT 📲', url='https://t.me/devil_filetourl_bot?start=help')
+            InlineKeyboardButton('📂 FILE TO LINK CONVERT 📲', url='https://t.me/File_To_Url_Bot?start=help')
             ],[
             InlineKeyboardButton('🔎 SEARCH INLINE 🔍', switch_inline_query_current_chat='')
             ],[
@@ -75,7 +75,7 @@ async def start(client, message):
         btn = [
             [
                 InlineKeyboardButton(
-                    "🤩JOIN UPDATES CHANNEL🥰", url=invite_link.invite_link
+                    "🤩JOIN MAIN CHANNEL🥰", url=invite_link.invite_link
                 )
             ]
         ]
@@ -84,12 +84,12 @@ async def start(client, message):
             try:
             	kk, file_id = message.command[1].split("_", 1)
             	pre = 'checksubp' if kk == 'filep' else 'checksub' 
-            	btn.append([InlineKeyboardButton(" 🔁 TRY AGAIN 🔁", callback_data=f"{pre}#{file_id}")])
+            	btn.append([InlineKeyboardButton("🔁 TRY AGAIN 🔁", callback_data=f"{pre}#{file_id}")])
             except (IndexError, ValueError):
-                btn.append([InlineKeyboardButton(" 🔁 TRY AGAIN 🔁", url=f"https://t.me/{temp.U_NAME}?start={message.command[1]}")])
+                btn.append([InlineKeyboardButton("🔁 TRY AGAIN 🔁", url=f"https://t.me/{temp.U_NAME}?start={message.command[1]}")])
         await client.send_message(
             chat_id=message.from_user.id,
-            text="**Please Join My Updates Channel to use this Bot!**",
+            text="**🤓ᑭᒪEᗩSE ᒍOIᑎ ᗰY OᗯᑎEᖇS ᑕᕼᗩᑎᑎEᒪ TO ᑌSE ᗰE!**
             reply_markup=InlineKeyboardMarkup(btn),
             parse_mode="markdown"
             )
@@ -98,7 +98,7 @@ async def start(client, message):
         buttons = [[
             InlineKeyboardButton('➕ ADD ME TO YOUR GROUPS ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('📂 FILE TO LINK CONVERT 📲', url='https://t.me/devil_filetourl_bot?start=help')
+            InlineKeyboardButton('📂 FILE TO LINK CONVERT 📲', url='https://t.me/File_To_Url_Bot?start=help')
             ],[
             InlineKeyboardButton('🔎 SEARCH INLINE 🔍', switch_inline_query_current_chat='')
             ],[
