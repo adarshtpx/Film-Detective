@@ -71,12 +71,12 @@
         },
         "DATABASE_URI": {
             "description": "mongoDB URI. Get this value from https://www.mongodb.com. For more help watch this video.",
-            "value": "mongodb+srv://film-detective:darkdevil@darkdevil.lcfllos.mongodb.net/?retryWrites=true&w=majority",
+            "value": "mongodb+srv://film-detective:darkdevil777@malindu7.yt2n28n.mongodb.net/?retryWrites=true&w=majority",
             "required": true
         },
         "DATABASE_NAME": {
             "description": "Name of the database in mongoDB.",
-            "value": "darkdevil",
+            "value": "malindu7",
             "required": true
         },
         "COLLECTION_NAME": {
