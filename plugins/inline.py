@@ -34,7 +34,7 @@ async def answer(bot, query):
     if AUTH_CHANNEL and not await is_subscribed(bot, query):
         await query.answer(results=[],
                            cache_time=0,
-                           switch_pm_text='ʏᴏᴜ ʜᴀᴠᴇ ᴛᴏ ꜱᴜʙꜱᴄʀɪʙᴇ ᴅᴀʀᴋ ᴅᴇᴠɪʟ ʙᴏᴛᴢ ᴛᴏ ᴜꜱᴇ ᴛʜᴇ ʙᴏᴛ',
+                           switch_pm_text="ʏᴏᴜ ᴍᴜꜱᴛ ꜱᴜʙꜱᴄʀɪʙᴇ ᴛᴏ 'ᴅᴀʀᴋ ᴅᴇᴠɪʟ ʙᴏᴛᴢ' ᴄʜᴀɴɴᴇʟ",
                            switch_pm_parameter="Subscribe")
         return
 
