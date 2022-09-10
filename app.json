@@ -26,17 +26,17 @@
         },
         "API_ID": {
             "description": "Get this value from https://my.telegram.org",
-            "value": "15197646",
+            "value": "19562731",
             "required": true
         },
         "API_HASH": {
             "description": "Get this value from https://my.telegram.org",
-            "value": "12ad370a8455c02701649e1d7b322dc2",
+            "value": "1667473e722f17eaa8ccbb98dc5f727d",
             "required": true
         },
         "BOT_TOKEN": {
             "description": "Your bot token.",
-            "value": "5429635253:AAEP9Lsy1Bk3TxDDewwtwf2XKU-W__l3UBU",
+            "value": "5764808122:AAFHdDoLutqDbauOWihzvjI0NLPKWwYIWC4",
             "required": true
         },    
         "CHANNELS": {
@@ -47,11 +47,6 @@
         "ADMINS": {
             "description": "Username or ID of Admin. Separate multiple Admins by space.",
             "value": "5512382938 2071644540",
-            "required": true
-        },
-        "PICS": {
-            "description": "Add some telegraph link of pictures .",
-            "value": "https://telegra.ph/file/65231bb88d4619354faf2.jpg",
             "required": true
         },
         "LOG_CHANNEL": {
