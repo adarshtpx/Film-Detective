@@ -12,44 +12,43 @@ def is_enabled(value, default):
         return default
 
 # Bot information
-SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ['API_ID'])
-API_HASH = environ['API_HASH']
-BOT_TOKEN = environ['BOT_TOKEN']
+SESSION = 'Film_search'
+API_ID = 19562731
+API_HASH = '1667473e722f17eaa8ccbb98dc5f727d'
+BOT_TOKEN = '5764808122:AAFLj6ZlKw8mmVpbU3OaWQ3qOFWnSEdyI7c'
 
 # Bot settings
-CACHE_TIME = int(environ.get('CACHE_TIME', 300))
+CACHE_TIME = 300
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', False))
-PICS = (environ.get('PICS', 'https://telegra.ph/file/7e56d907542396289fee4.jpg https://telegra.ph/file/9aa8dd372f4739fe02d85.jpg https://telegra.ph/file/adffc5ce502f5578e2806.jpg https://telegra.ph/file/6937b60bc2617597b92fd.jpg https://telegra.ph/file/09a7abaab340143f9c7e7.jpg https://telegra.ph/file/5a82c4a59bd04d415af1c.jpg https://telegra.ph/file/323986d3bd9c4c1b3cb26.jpg https://telegra.ph/file/b8a82dcb89fb296f92ca0.jpg https://telegra.ph/file/31adab039a85ed88e22b0.jpg https://telegra.ph/file/c0e0f4c3ed53ac8438f34.jpg https://telegra.ph/file/eede835fb3c37e07c9cee.jpg https://telegra.ph/file/e17d2d068f71a9867d554.jpg https://telegra.ph/file/8fb1ae7d995e8735a7c25.jpg https://telegra.ph/file/8fed19586b4aa019ec215.jpg https://telegra.ph/file/8e6c923abd6139083e1de.jpg https://telegra.ph/file/0049d801d29e83d68b001.jpg')).split()
-
+PICS = 'https://telegra.ph/file/7483f17aba9b8b9fe3fd2.jpg https://telegra.ph/file/2b25fe26acfe2b03c498b.jpg https://telegra.ph/file/cbc1b02c3eccffa4338e7.jpg https://telegra.ph/file/afa3857624ea73d75b952.jpg https://telegra.ph/file/d9aefbb2fad9acf2167ef.jpg https://telegra.ph/file/a2249ed4e7059b284c00d.jpg https://telegra.ph/file/4e46577784df1d6b7fc68.jpg https://telegra.ph/file/d3775a0ffb2574034f4f3.jpg https://telegra.ph/file/a380df4cd7f89db9b3ec4.jpg'
 # Admins, Channels & Users
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '').split()]
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '0').split()]
+ADMINS = [5512382938, 2071644540]
+CHANNELS = [-1001621272794, -1001673187322, -1001607692169]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
-auth_channel = environ.get('AUTH_CHANNEL')
+auth_channel = [-1001616221826]
+AUTH_CHANNEL = [-1001616221826]
 auth_grp = environ.get('AUTH_GROUP')
-AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "")
-DATABASE_NAME = environ.get('DATABASE_NAME', "cluter0")
-COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
+DATABASE_URI = 'mongodb+srv://film-detective:darkdevil@darkdevil.lcfllos.mongodb.net/?retryWrites=true&w=majority'
+DATABASE_NAME = 'darkdevil'
+COLLECTION_NAME = 'Devil_Films'
 
 # Others
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', 0))
+LOG_CHANNEL = [-1001787331054]
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'DarkDevilBotz')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "False")), False)
 IMDB = is_enabled((environ.get('IMDB', "True")), True)
-SINGLE_BUTTON = is_enabled((environ.get('SINGLE_BUTTON', "False")), False)
-CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", None)
-BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", CUSTOM_FILE_CAPTION)
-IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", "🤩Hey, {message.from_user.mention} 𝙱𝚁𝙾\n ᴀʀᴇ ʏᴏᴜ ʟᴏᴏᴋɪɴɢ ꜰᴏʀ ᴛʜɪꜱ ᴍᴏᴠɪᴇ?\n 👉 {query} 👈\n\n<b>♥️𝚃𝙸𝚃𝙻𝙴</b>: <a href={url}>{title}</a>\n🎭 𝙶𝙴𝙽𝚁𝙴𝚂: {genres}\n📆 𝚈𝙴𝙰𝚁: <a href={url}/releaseinfo>{year}</a>\n🌟 𝚁𝙰𝚃𝙸𝙽𝙶: <a href={url}/ratings>{rating}</a> / 10 (𝙱𝙰𝚂𝙴𝙳 𝙾𝙽 {votes} 𝚄𝚂𝙴𝚁 𝚁𝙰𝚃𝙸𝙽𝙶𝚂.)\n💽 𝚁𝚄𝙽𝚃𝙸𝙼𝙴: {runtime} Minutes\n📆 𝚁𝙴𝙻𝙴𝙰𝚂𝙴𝙳 : {release_date}\n🌍 𝙲𝙾𝚄𝙽𝚃𝚁𝙸𝙴𝚂 : <code>{countries}</code>\n\n☕𝙿𝙾𝚆𝙴𝚁𝙳 𝙱𝚈☕\n <a href=https://t.me/DarkDevilBotz>©️ᴅᴀʀᴋ ᴅᴇᴠɪʟ ʙᴏᴛᴢ</a>\n <a href=https://t.me/TeamDarkDevil>©️ᴛᴇᴀᴍ ᴅᴀʀᴋ ᴅᴇᴠɪʟ</a>")
+SINGLE_BUTTON = is_enabled((environ.get('SINGLE_BUTTON', "False")), True)
+CUSTOM_FILE_CAPTION = "🤩<b>ᴊᴏɪɴ [ᴜᴘᴅᴀᴛᴇꜱ ᴄʜᴀɴɴᴇʟ](https://t.me/DarkNetflixPublic)</b>😍\n📂𝙵𝙸𝙻𝙴 : <code>{file_name}</code>\n📼𝚂𝙸𝚉𝙴 : <i>{file_size}<i>\n😈𝙾𝚆𝙽𝙴𝚁 : <a href=https://t.me/DARKDevilV2>ᴅᴀʀᴋ ᴅᴇᴠɪʟ</a>"
+BATCH_FILE_CAPTION = "🤩<b>ᴊᴏɪɴ [ᴜᴘᴅᴀᴛᴇꜱ ᴄʜᴀɴɴᴇʟ](https://t.me/DarkNetflixPublic)</b>😍\n📂𝙵𝙸𝙻𝙴 : <code>{file_name}</code>\n📼𝚂𝙸𝚉𝙴 : <i>{file_size}<i>\n😈𝙾𝚆𝙽𝙴𝚁 : <a href=https://t.me/DARKDevilV2>ᴅᴀʀᴋ ᴅᴇᴠɪʟ</a>"
+IMDB_TEMPLATE = "🤩𝙷𝙴𝚈, {message.from_user.mention} 𝙱𝚁𝙾\n ᴀʀᴇ ʏᴏᴜ ʟᴏᴏᴋɪɴɢ ꜰᴏʀ ᴛʜɪꜱ ᴍᴏᴠɪᴇ?\n 👉 {query} 👈\n\n<b>♥️𝚃𝙸𝚃𝙻𝙴</b>: <a href={url}>{title}</a>\n🎭 𝙶𝙴𝙽𝚁𝙴𝚂: {genres}\n📆 𝚈𝙴𝙰𝚁: <a href={url}/releaseinfo>{year}</a>\n🌟 𝚁𝙰𝚃𝙸𝙽𝙶: <a href={url}/ratings>{rating}</a> / 10 (𝙱𝙰𝚂𝙴𝙳 𝙾𝙽 {votes} 𝚄𝚂𝙴𝚁 𝚁𝙰𝚃𝙸𝙽𝙶𝚂.)\n💽 𝚁𝚄𝙽𝚃𝙸𝙼𝙴: {runtime} Minutes\n📆 𝚁𝙴𝙻𝙴𝙰𝚂𝙴𝙳 : {release_date}\n🌍 𝙲𝙾𝚄𝙽𝚃𝚁𝙸𝙴𝚂 : <code>{countries}</code>\n\n☕𝙿𝙾𝚆𝙴𝚁𝙳 𝙱𝚈☕\n <a href=https://t.me/DarkDevilBotz>©️ᴅᴀʀᴋ ᴅᴇᴠɪʟ ʙᴏᴛᴢ</a>\n <a href=https://t.me/TeamDarkDevil>©️ᴛᴇᴀᴍ ᴅᴀʀᴋ ᴅᴇᴠɪʟ</a>"
 LONG_IMDB_DESCRIPTION = is_enabled(environ.get("LONG_IMDB_DESCRIPTION", "False"), False)
 SPELL_CHECK_REPLY = is_enabled(environ.get("SPELL_CHECK_REPLY", "True"), True)
 MAX_LIST_ELM = environ.get("MAX_LIST_ELM", None)
-INDEX_REQ_CHANNEL = int(environ.get('INDEX_REQ_CHANNEL', LOG_CHANNEL))
+INDEX_REQ_CHANNEL = [-1001787331054]
 FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '')).split()]
 MELCOW_NEW_USERS = is_enabled((environ.get('MELCOW_NEW_USERS', "True")), True)
 PROTECT_CONTENT = is_enabled((environ.get('PROTECT_CONTENT', "False")), False)
