@@ -89,7 +89,7 @@ async def start(client, message):
                 btn.append([InlineKeyboardButton("🔁 TRY AGAIN 🔁", url=f"https://t.me/{temp.U_NAME}?start={message.command[1]}")])
         await client.send_message(
             chat_id=message.from_user.id,
-            text="**🤓ᑭᒪEᗩSE SᑌᗷSᑕᖇIᗷE ᗰY OᗯᑎEᖇS ᑕᕼᗩᑎᑎEᒪ TO ᑌSE ᗰE!**
+            text="**🤓ᑭᒪEᗩSE SᑌᗷSᑕᖇIᗷE ᗰY OᗯᑎEᖇS ᑕᕼᗩᑎᑎEᒪ TO ᑌSE ᗰE!**"
             reply_markup=InlineKeyboardMarkup(btn),
             parse_mode="markdown"
             )
